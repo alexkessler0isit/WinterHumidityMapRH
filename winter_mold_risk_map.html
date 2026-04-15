@@ -1,0 +1,3162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3aa7cc8f5a7f53037e27ad2b4b619e1f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3aa7cc8f5a7f53037e27ad2b4b619e1f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3aa7cc8f5a7f53037e27ad2b4b619e1f = L.map(
+                "map_3aa7cc8f5a7f53037e27ad2b4b619e1f",
+                {
+                    center: [40.813445, -94.11949999999999],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2b0995171e33f1b39b9eff0739ef66dc = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2b0995171e33f1b39b9eff0739ef66dc.addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            var circle_marker_26815511c6f801ee106ce77f096ae685 = L.circleMarker(
+                [47.444, -122.314],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b83555ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_26815511c6f801ee106ce77f096ae685.bindTooltip(
+                `<div>
+                     <b>Seattle-Tacoma.Intl.AP, WA, USA</b><br>Mold-supportive days: <b>33.3%</b> of winter<br>Mean winter RH: 76.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc065454b3b3266887bdcc125f6df17f = L.circleMarker(
+                [46.973, -122.903],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fddc5aff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_cc065454b3b3266887bdcc125f6df17f.bindTooltip(
+                `<div>
+                     <b>Olympia.Rgnl.AP, WA, USA</b><br>Mold-supportive days: <b>61.1%</b> of winter<br>Mean winter RH: 87.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de2a196f6a94c78ae4a15d4a837272cd = L.circleMarker(
+                [48.794, -122.537],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f38626ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_de2a196f6a94c78ae4a15d4a837272cd.bindTooltip(
+                `<div>
+                     <b>Bellingham.Intl.AP, WA, USA</b><br>Mold-supportive days: <b>48.9%</b> of winter<br>Mean winter RH: 80.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e6b16e0c8d71699be06f4d58b376cf4 = L.circleMarker(
+                [47.633, -117.65],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#270748ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_2e6b16e0c8d71699be06f4d58b376cf4.bindTooltip(
+                `<div>
+                     <b>Spokane-Fairchild.AFB, WA, USA</b><br>Mold-supportive days: <b>8.9%</b> of winter<br>Mean winter RH: 85.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_633f84e9eefe19b99608e6580dc24fd1 = L.circleMarker(
+                [46.568, -120.543],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_633f84e9eefe19b99608e6580dc24fd1.bindTooltip(
+                `<div>
+                     <b>Yakima.AF-McAllister.Field, WA, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 70.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_97ce99bace472fc451e836f1d5bbffdc = L.circleMarker(
+                [45.541, -122.949],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fcbc27ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_97ce99bace472fc451e836f1d5bbffdc.bindTooltip(
+                `<div>
+                     <b>Portland-Hillsboro.AP, OR, USA</b><br>Mold-supportive days: <b>55.6%</b> of winter<br>Mean winter RH: 82.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d8a13ebff86d5141693afcff3491ec0 = L.circleMarker(
+                [44.128, -123.221],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fcbc27ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_7d8a13ebff86d5141693afcff3491ec0.bindTooltip(
+                `<div>
+                     <b>Eugene.AP-Sweet.Field, OR, USA</b><br>Mold-supportive days: <b>55.6%</b> of winter<br>Mean winter RH: 84.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4576bc11b1d49ebabf08f9279ee9bbfa = L.circleMarker(
+                [46.208, -123.767],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdd64eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_4576bc11b1d49ebabf08f9279ee9bbfa.bindTooltip(
+                `<div>
+                     <b>Astoria, OR, USA</b><br>Mold-supportive days: <b>60.0%</b> of winter<br>Mean winter RH: 81.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3aa98cc5f938591b6fa113256662df9a = L.circleMarker(
+                [42.37694, -122.8822],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6f196aff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_3aa98cc5f938591b6fa113256662df9a.bindTooltip(
+                `<div>
+                     <b>Medford-Rogue.Valley.Intl-Medford.AP, OR, USA</b><br>Mold-supportive days: <b>21.1%</b> of winter<br>Mean winter RH: 77.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9544d82be846cea198b98f6273a66f1f = L.circleMarker(
+                [33.77, -118.17],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#611667ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9544d82be846cea198b98f6273a66f1f.bindTooltip(
+                `<div>
+                     <b>Long.Beach, CA, USA</b><br>Mold-supportive days: <b>18.9%</b> of winter<br>Mean winter RH: 70.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35eb7a4894a09745cf4d0f8f5cddf680 = L.circleMarker(
+                [43.567, -116.241],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#18042eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_35eb7a4894a09745cf4d0f8f5cddf680.bindTooltip(
+                `<div>
+                     <b>Boise.AP-Gowen.Field.ANGB, ID, USA</b><br>Mold-supportive days: <b>5.6%</b> of winter<br>Mean winter RH: 72.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b16781b9d8725d5c6c774b352fe679a = L.circleMarker(
+                [47.767, -116.817],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#090114ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_6b16781b9d8725d5c6c774b352fe679a.bindTooltip(
+                `<div>
+                     <b>Coeur.dAlene.AP-Boyington.Field, ID, USA</b><br>Mold-supportive days: <b>2.2%</b> of winter<br>Mean winter RH: 83.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f7728712de0c3a581b084b1526533f5 = L.circleMarker(
+                [46.921, -114.093],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9f7728712de0c3a581b084b1526533f5.bindTooltip(
+                `<div>
+                     <b>Missoula.Intl.AP, MT, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 77.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7d4ed9fce6114aa239917a13aa6d98c = L.circleMarker(
+                [45.807, -108.542],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_b7d4ed9fce6114aa239917a13aa6d98c.bindTooltip(
+                `<div>
+                     <b>Billings.Logan.Intl.AP, MT, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 58.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20fdaac26a788a37e73548326f0760ea = L.circleMarker(
+                [33.6, -102.05],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#130325ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_20fdaac26a788a37e73548326f0760ea.bindTooltip(
+                `<div>
+                     <b>Lubbock-Reese.AF, TX, USA</b><br>Mold-supportive days: <b>4.4%</b> of winter<br>Mean winter RH: 57.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2a7688a35063a37f6a737bd75de7016 = L.circleMarker(
+                [42.898, -106.474],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_c2a7688a35063a37f6a737bd75de7016.bindTooltip(
+                `<div>
+                     <b>Casper-Natrona.County.Intl.AP, WY, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 64.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58f88cd64ca99f9c3eae045bd8fd74b3 = L.circleMarker(
+                [41.133, -104.867],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_58f88cd64ca99f9c3eae045bd8fd74b3.bindTooltip(
+                `<div>
+                     <b>Cheyenne-Warren.AFB, WY, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 56.1%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70eca01322adc9bcc0ec750dc63015c8 = L.circleMarker(
+                [43.6, -110.733],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_70eca01322adc9bcc0ec750dc63015c8.bindTooltip(
+                `<div>
+                     <b>Jackson.Hole.AP, WY, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 78.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5002d38bf5c1891860375a1865b5ea0c = L.circleMarker(
+                [39.57, -104.849],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_5002d38bf5c1891860375a1865b5ea0c.bindTooltip(
+                `<div>
+                     <b>Denver-Centennial.AP, CO, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 54.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_989c83d6459c8d770e7bf8cd1115150b = L.circleMarker(
+                [39.12, -108.525],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_989c83d6459c8d770e7bf8cd1115150b.bindTooltip(
+                `<div>
+                     <b>Grand.Junction.Rgnl.AP-Walker.Field, CO, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 64.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a04d70516d1b85f37bcb3d0da7afd36 = L.circleMarker(
+                [38.81, -104.688],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_1a04d70516d1b85f37bcb3d0da7afd36.bindTooltip(
+                `<div>
+                     <b>Colorado.Springs.AP-Peterson.Field, CO, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 50.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2e3f52bcd9a0d179a6316b9015134b8 = L.circleMarker(
+                [40.778, -111.969],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_c2e3f52bcd9a0d179a6316b9015134b8.bindTooltip(
+                `<div>
+                     <b>Salt.Lake.City.Intl.AP, UT, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 70.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a566f559a5bd691f80c06f1b63b81ed5 = L.circleMarker(
+                [37.091, -113.593],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_a566f559a5bd691f80c06f1b63b81ed5.bindTooltip(
+                `<div>
+                     <b>St.George.Rgnl.AP, UT, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 52.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7594e3c482fbe9fe173d40cbcdf4126 = L.circleMarker(
+                [39.484, -119.771],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_a7594e3c482fbe9fe173d40cbcdf4126.bindTooltip(
+                `<div>
+                     <b>Reno-Tahoe.Intl.AP, NV, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 63.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0764192327a6d4d04253d515df19b84 = L.circleMarker(
+                [36.072, -115.163],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_c0764192327a6d4d04253d515df19b84.bindTooltip(
+                `<div>
+                     <b>Las.Vegas-McCarran.Intl.AP, NV, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 35.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5524898f9e938b336a0f82df2965414e = L.circleMarker(
+                [35.144, -111.666],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_5524898f9e938b336a0f82df2965414e.bindTooltip(
+                `<div>
+                     <b>Flagstaff.Pulliam.AP, AZ, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 56.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22934bf89607154a02a68ee326cb228e = L.circleMarker(
+                [33.688, -112.082],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#090114ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_22934bf89607154a02a68ee326cb228e.bindTooltip(
+                `<div>
+                     <b>Phoenix-Deer.Valley.Muni.AP, AZ, USA</b><br>Mold-supportive days: <b>2.2%</b> of winter<br>Mean winter RH: 47.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a540f29daaa70ecf2eb542e53ade7e17 = L.circleMarker(
+                [32.167, -110.883],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e021dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_a540f29daaa70ecf2eb542e53ade7e17.bindTooltip(
+                `<div>
+                     <b>Tucson-Davis-Monthan.AFB, AZ, USA</b><br>Mold-supportive days: <b>3.3%</b> of winter<br>Mean winter RH: 45.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6071f1c12510ce777274c382e51277bb = L.circleMarker(
+                [35.145, -106.795],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#18042eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_6071f1c12510ce777274c382e51277bb.bindTooltip(
+                `<div>
+                     <b>Albuquerque-Double.Eagle.II.AP, NM, USA</b><br>Mold-supportive days: <b>5.6%</b> of winter<br>Mean winter RH: 54.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8deba4c6f3d3b8b901a6003727a55054 = L.circleMarker(
+                [35.617, -106.089],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_8deba4c6f3d3b8b901a6003727a55054.bindTooltip(
+                `<div>
+                     <b>Santa.Fe.Muni.AP, NM, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 59.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d61a7c8ebf95549628b952802e75dfd4 = L.circleMarker(
+                [31.811, -106.376],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#090114ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_d61a7c8ebf95549628b952802e75dfd4.bindTooltip(
+                `<div>
+                     <b>El.Paso.Intl.AP, TX, USA</b><br>Mold-supportive days: <b>2.2%</b> of winter<br>Mean winter RH: 43.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b63e68b3f8eb0d79371d3b567ffa1802 = L.circleMarker(
+                [47.473, -111.382],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_b63e68b3f8eb0d79371d3b567ffa1802.bindTooltip(
+                `<div>
+                     <b>Great.Falls.Intl.AP, MT, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 62.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7cd4e8a3358623a93c4fde7a0ea4a4bc = L.circleMarker(
+                [34.024, -118.291],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#18042eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_7cd4e8a3358623a93c4fde7a0ea4a4bc.bindTooltip(
+                `<div>
+                     <b>Los.Angeles.Downtown-USC.Campus, CA, USA</b><br>Mold-supportive days: <b>5.6%</b> of winter<br>Mean winter RH: 59.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7cd6cc228b07221bb08f78ba94900d81 = L.circleMarker(
+                [33.822, -116.504],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_7cd6cc228b07221bb08f78ba94900d81.bindTooltip(
+                `<div>
+                     <b>Palm.Springs.Intl.AP, CA, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 34.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e774eeacc50bab28f6e01d58a4fd2925 = L.circleMarker(
+                [34.4033, -119.7002],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22063fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_e774eeacc50bab28f6e01d58a4fd2925.bindTooltip(
+                `<div>
+                     <b>Santa.Barbara, CA, USA</b><br>Mold-supportive days: <b>7.8%</b> of winter<br>Mean winter RH: 60.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be465d1f308f52c038a94e7aca1b1332 = L.circleMarker(
+                [38.20038, -122.0264],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e05c31ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_be465d1f308f52c038a94e7aca1b1332.bindTooltip(
+                `<div>
+                     <b>Fairfield-San.Francisco.Bay.Reserve, CA, USA</b><br>Mold-supportive days: <b>42.2%</b> of winter<br>Mean winter RH: 73.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ce294289cc30ab1ece4171f38da015e = L.circleMarker(
+                [37.8017, -122.2809],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f38626ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_0ce294289cc30ab1ece4171f38da015e.bindTooltip(
+                `<div>
+                     <b>Oakland, CA, USA</b><br>Mold-supportive days: <b>48.9%</b> of winter<br>Mean winter RH: 74.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b042eedc0b843af963d551be52d81d5 = L.circleMarker(
+                [37.359, -121.924],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#681769ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_5b042eedc0b843af963d551be52d81d5.bindTooltip(
+                `<div>
+                     <b>San.Jose-Mineta.Intl.AP, CA, USA</b><br>Mold-supportive days: <b>20.0%</b> of winter<br>Mean winter RH: 69.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7bed69d51092b35afdbde1330821bc30 = L.circleMarker(
+                [38.567, -121.3],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f9aa27ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_7bed69d51092b35afdbde1330821bc30.bindTooltip(
+                `<div>
+                     <b>Sacramento-Mather.AP, CA, USA</b><br>Mold-supportive days: <b>53.3%</b> of winter<br>Mean winter RH: 78.1%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_acbc8e1fc5b3c16b6a507c9e1634edf3 = L.circleMarker(
+                [36.732, -119.82],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7c1d6bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_acbc8e1fc5b3c16b6a507c9e1634edf3.bindTooltip(
+                `<div>
+                     <b>Fresno.Chandler.Exec.AP, CA, USA</b><br>Mold-supportive days: <b>23.3%</b> of winter<br>Mean winter RH: 71.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9820ef324545ffd27707226b9a60a952 = L.circleMarker(
+                [35.434, -119.054],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#450e5fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9820ef324545ffd27707226b9a60a952.bindTooltip(
+                `<div>
+                     <b>Bakersfield-Meadows.Field.AP, CA, USA</b><br>Mold-supportive days: <b>14.4%</b> of winter<br>Mean winter RH: 60.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad8ad64413590734935eccd166b91643 = L.circleMarker(
+                [40.978, -124.109],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdd042ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_ad8ad64413590734935eccd166b91643.bindTooltip(
+                `<div>
+                     <b>Arcata-Eureka-California.Redwood.Coast-Humboldt.County.AP, CA, USA</b><br>Mold-supportive days: <b>58.9%</b> of winter<br>Mean winter RH: 80.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6ec69671ae503fb1fa9ecc6c47e29ad = L.circleMarker(
+                [40.6507, -122.6068],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#611667ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_e6ec69671ae503fb1fa9ecc6c47e29ad.bindTooltip(
+                `<div>
+                     <b>Redding-Whiskeytown.Natl.Recreation.Area, CA, USA</b><br>Mold-supportive days: <b>18.9%</b> of winter<br>Mean winter RH: 69.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c999220a5c40a934d14f04ac795c31c0 = L.circleMarker(
+                [46.479, -84.357],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_c999220a5c40a934d14f04ac795c31c0.bindTooltip(
+                `<div>
+                     <b>Sault.Ste.Marie-Sanderson.Field.AP, MI, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 73.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_146b154fe8c6e856103d5bb2926c5fcb = L.circleMarker(
+                [37.371, -118.358],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_146b154fe8c6e856103d5bb2926c5fcb.bindTooltip(
+                `<div>
+                     <b>Bishop-Eastern.Sierra.Rgnl.AP, CA, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 49.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db8e0eb33b1f135c4535d94d2257ef3e = L.circleMarker(
+                [21.3033, -157.8645],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#370b5bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_db8e0eb33b1f135c4535d94d2257ef3e.bindTooltip(
+                `<div>
+                     <b>CGB.Honolulu.Oahu, HI, USA</b><br>Mold-supportive days: <b>12.2%</b> of winter<br>Mean winter RH: 74.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe8079a27bad4a56579ff7f8029923c1 = L.circleMarker(
+                [19.645, -155.083],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdf48cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_fe8079a27bad4a56579ff7f8029923c1.bindTooltip(
+                `<div>
+                     <b>Hilo.Hawaii, HI, USA</b><br>Mold-supportive days: <b>65.6%</b> of winter<br>Mean winter RH: 82.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ee631bbfbabf8b33409b8b1f256626d = L.circleMarker(
+                [61.26667, -149.65],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_4ee631bbfbabf8b33409b8b1f256626d.bindTooltip(
+                `<div>
+                     <b>Anchorage-JB.Elmendorf-Richardson-Bryant.AAF, AK, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 84.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_add712322218769c47626fb56ad4bd37 = L.circleMarker(
+                [64.683, -147.083],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_add712322218769c47626fb56ad4bd37.bindTooltip(
+                `<div>
+                     <b>Fairbanks-Eielson.AFB, AK, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 73.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_beb28e2377c88bee09160d21cc64fbbf = L.circleMarker(
+                [58.30096, -134.42],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#130325ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_beb28e2377c88bee09160d21cc64fbbf.bindTooltip(
+                `<div>
+                     <b>Juneau, AK, USA</b><br>Mold-supportive days: <b>4.4%</b> of winter<br>Mean winter RH: 81.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b305da76fe57861c1732e64099f1f2f = L.circleMarker(
+                [64.511, -165.44],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9b305da76fe57861c1732e64099f1f2f.bindTooltip(
+                `<div>
+                     <b>Nome.AP, AK, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 75.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a17e1deef6c7f51e204849a744719ff = L.circleMarker(
+                [71.333, -156.633],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_2a17e1deef6c7f51e204849a744719ff.bindTooltip(
+                `<div>
+                     <b>Point.Barrow, AK, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 77.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bea0d8edd93ab5ca69bc4a45fce3cfa3 = L.circleMarker(
+                [46.783, -100.757],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_bea0d8edd93ab5ca69bc4a45fce3cfa3.bindTooltip(
+                `<div>
+                     <b>Bismarck.Muni.AP, ND, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 75.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a1ced145a82726be76d25532802ccfc = L.circleMarker(
+                [46.925, -96.811],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_3a1ced145a82726be76d25532802ccfc.bindTooltip(
+                `<div>
+                     <b>Fargo-Hector.Intl.AP, ND, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 76.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93dd681fd2ddffb42bad968aac3c91f4 = L.circleMarker(
+                [48.417, -101.35],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_93dd681fd2ddffb42bad968aac3c91f4.bindTooltip(
+                `<div>
+                     <b>Minot.AFB, ND, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 77.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cefcef38ba3580451be8c2e872bd9047 = L.circleMarker(
+                [44.019, -100.353],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_cefcef38ba3580451be8c2e872bd9047.bindTooltip(
+                `<div>
+                     <b>Ft.Pierre.Natl.Grassland, SD, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 65.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b552ea6cd9c2f3e1871820d447f9850 = L.circleMarker(
+                [43.73403, -96.62328],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_7b552ea6cd9c2f3e1871820d447f9850.bindTooltip(
+                `<div>
+                     <b>Sioux.Falls.Climate.SURFRAD, SD, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 77.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6301bf8ff502a0cf4ea64d5e626b9b60 = L.circleMarker(
+                [44.15, -103.1],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_6301bf8ff502a0cf4ea64d5e626b9b60.bindTooltip(
+                `<div>
+                     <b>Rapid.City-Ellsworth.AFB, SD, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 67.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dfb920e689d57262041d170a50547d60 = L.circleMarker(
+                [45.062, -93.351],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_dfb920e689d57262041d170a50547d60.bindTooltip(
+                `<div>
+                     <b>Minneapolis-Crystal.AP, MN, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 71.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d5c881e0018afe74cff00c92ea91440 = L.circleMarker(
+                [46.722, -92.043],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_1d5c881e0018afe74cff00c92ea91440.bindTooltip(
+                `<div>
+                     <b>Duluth-Sky.Harbor.AP, MN, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 73.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_485cd9872feb20ef20e8f47e83af5ca9 = L.circleMarker(
+                [48.561, -93.398],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_485cd9872feb20ef20e8f47e83af5ca9.bindTooltip(
+                `<div>
+                     <b>International.Falls-Falls.Intl.AP, MN, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 74.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33c51f362106d67c807ed67c46310e47 = L.circleMarker(
+                [42.955, -87.904],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#090114ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_33c51f362106d67c807ed67c46310e47.bindTooltip(
+                `<div>
+                     <b>Milwaukee-Mitchell.Intl.AP, WI, USA</b><br>Mold-supportive days: <b>2.2%</b> of winter<br>Mean winter RH: 68.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ff5dbc9a4576448c6f6b30a676a194c = L.circleMarker(
+                [43.141, -89.345],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_3ff5dbc9a4576448c6f6b30a676a194c.bindTooltip(
+                `<div>
+                     <b>Madison-Dane.County.Rgnl.AP-Truax.Field, WI, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 70.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e0f91462be73e2cf5fda919496c82b3 = L.circleMarker(
+                [44.479, -88.137],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_0e0f91462be73e2cf5fda919496c82b3.bindTooltip(
+                `<div>
+                     <b>Green.Bay-Straubel.Intl.AP, WI, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 69.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11f902ac82fd071c2058212749e10605 = L.circleMarker(
+                [41.71736, -87.52681],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#090114ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_11f902ac82fd071c2058212749e10605.bindTooltip(
+                `<div>
+                     <b>Chicago-CGS.Calumet, IL, USA</b><br>Mold-supportive days: <b>2.2%</b> of winter<br>Mean winter RH: 72.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9121514813a0c2f2befade42347ea2bd = L.circleMarker(
+                [40.668, -89.684],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#130325ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9121514813a0c2f2befade42347ea2bd.bindTooltip(
+                `<div>
+                     <b>Peoria-Downing.Peoria.Intl.AP, IL, USA</b><br>Mold-supportive days: <b>4.4%</b> of winter<br>Mean winter RH: 71.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33fceed4a6dc6a4f4fd1a689caef65ad = L.circleMarker(
+                [39.845, -89.684],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d0537ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_33fceed4a6dc6a4f4fd1a689caef65ad.bindTooltip(
+                `<div>
+                     <b>Springfield-Lincoln.Capital.AP, IL, USA</b><br>Mold-supportive days: <b>6.7%</b> of winter<br>Mean winter RH: 73.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_817198d8965576187827dbe0723f9859 = L.circleMarker(
+                [39.825, -86.296],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d0537ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_817198d8965576187827dbe0723f9859.bindTooltip(
+                `<div>
+                     <b>Indianapolis-Eagle.Creek.AP, IN, USA</b><br>Mold-supportive days: <b>6.7%</b> of winter<br>Mean winter RH: 70.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60b881b05ab1b323b6c4ef437b8db2c0 = L.circleMarker(
+                [42.409, -83.01],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d0537ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_60b881b05ab1b323b6c4ef437b8db2c0.bindTooltip(
+                `<div>
+                     <b>Detroit-Young.Intl.AP, MI, USA</b><br>Mold-supportive days: <b>6.7%</b> of winter<br>Mean winter RH: 68.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b397d83e3ca89e1a6c3e311ce38db384 = L.circleMarker(
+                [42.883, -85.524],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_b397d83e3ca89e1a6c3e311ce38db384.bindTooltip(
+                `<div>
+                     <b>Grand.Rapids-Ford.Intl.AP, MI, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 72.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31de09bc642c958ad63926bba0b2bf54 = L.circleMarker(
+                [44.095, -121.2],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_31de09bc642c958ad63926bba0b2bf54.bindTooltip(
+                `<div>
+                     <b>Bend.Muni.AP, OR, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 71.1%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f07fe8e4b9dd7716adae527e5d802648 = L.circleMarker(
+                [41.518, -81.684],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#090114ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_f07fe8e4b9dd7716adae527e5d802648.bindTooltip(
+                `<div>
+                     <b>Cleveland-Burke.Lakefront.AP, OH, USA</b><br>Mold-supportive days: <b>2.2%</b> of winter<br>Mean winter RH: 67.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85d53e78e4f516e1c7703aa9b32d2242 = L.circleMarker(
+                [39.9, -83.133],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#450e5fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_85d53e78e4f516e1c7703aa9b32d2242.bindTooltip(
+                `<div>
+                     <b>Columbus-Bolton.Field.AP, OH, USA</b><br>Mold-supportive days: <b>14.4%</b> of winter<br>Mean winter RH: 77.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b79293dc29de6e516d4fb795bfcfec90 = L.circleMarker(
+                [39.103, -84.419],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#310958ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_b79293dc29de6e516d4fb795bfcfec90.bindTooltip(
+                `<div>
+                     <b>Cincinnati.Muni.AP-Lunken.Field, OH, USA</b><br>Mold-supportive days: <b>11.1%</b> of winter<br>Mean winter RH: 70.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e832e299b8bb9b1f45da515e9d9e90ee = L.circleMarker(
+                [42.94111, -78.71889],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#130325ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_e832e299b8bb9b1f45da515e9d9e90ee.bindTooltip(
+                `<div>
+                     <b>Buffalo.Niagara.Intl.AP, NY, USA</b><br>Mold-supportive days: <b>4.4%</b> of winter<br>Mean winter RH: 69.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9cf689495654521d74325634117d4264 = L.circleMarker(
+                [43.111, -76.104],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9cf689495654521d74325634117d4264.bindTooltip(
+                `<div>
+                     <b>Syracuse.Hancock.Intl.AP, NY, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 70.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_babfe20e0480ad22828d9566f3f1ebdd = L.circleMarker(
+                [42.747, -73.799],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e021dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_babfe20e0480ad22828d9566f3f1ebdd.bindTooltip(
+                `<div>
+                     <b>Albany.Intl.AP, NY, USA</b><br>Mold-supportive days: <b>3.3%</b> of winter<br>Mean winter RH: 64.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b21d061772109c933ab785c1e261d543 = L.circleMarker(
+                [40.77889, -73.96917],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22063fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_b21d061772109c933ab785c1e261d543.bindTooltip(
+                `<div>
+                     <b>New.York-Central.Park.Obs-Belvedere.Castle, NY, USA</b><br>Mold-supportive days: <b>7.8%</b> of winter<br>Mean winter RH: 64.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bee194eab12042f1b860bc16a7af15a2 = L.circleMarker(
+                [42.361, -71.01],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e021dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_bee194eab12042f1b860bc16a7af15a2.bindTooltip(
+                `<div>
+                     <b>Boston-Logan.Intl.AP, MA, USA</b><br>Mold-supportive days: <b>3.3%</b> of winter<br>Mean winter RH: 59.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99c945d65859ddaff1388a42db6e64d4 = L.circleMarker(
+                [42.271, -71.873],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22063fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_99c945d65859ddaff1388a42db6e64d4.bindTooltip(
+                `<div>
+                     <b>Worcester.Rgnl.AP, MA, USA</b><br>Mold-supportive days: <b>7.8%</b> of winter<br>Mean winter RH: 63.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e8ea77216c3218af434652fe1da252c0 = L.circleMarker(
+                [41.723, -71.433],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#270748ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_e8ea77216c3218af434652fe1da252c0.bindTooltip(
+                `<div>
+                     <b>Providence-Green.Intl.State.AP, RI, USA</b><br>Mold-supportive days: <b>8.9%</b> of winter<br>Mean winter RH: 61.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a05a19cc4f3294e3bcb447e03d4f5f1e = L.circleMarker(
+                [41.938, -72.682],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_a05a19cc4f3294e3bcb447e03d4f5f1e.bindTooltip(
+                `<div>
+                     <b>Hartford-Bradley.Intl.AP, CT, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 62.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d2c5306acb23bc638ebf39a9b709e29 = L.circleMarker(
+                [44.468, -73.15],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9d2c5306acb23bc638ebf39a9b709e29.bindTooltip(
+                `<div>
+                     <b>Burlington.Intl.AP, VT, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 67.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdd275e7c4afc41b25ed39f971e5c0fa = L.circleMarker(
+                [43.205, -71.503],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#130325ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_fdd275e7c4afc41b25ed39f971e5c0fa.bindTooltip(
+                `<div>
+                     <b>Concord.Muni.AP, NH, USA</b><br>Mold-supportive days: <b>4.4%</b> of winter<br>Mean winter RH: 65.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_925c70c6c66ea0f9f78f9d367a14885e = L.circleMarker(
+                [43.65086, -70.25526],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#310958ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_925c70c6c66ea0f9f78f9d367a14885e.bindTooltip(
+                `<div>
+                     <b>Portland, ME, USA</b><br>Mold-supportive days: <b>11.1%</b> of winter<br>Mean winter RH: 71.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e7d47fbffdf406bd215a0f081399410 = L.circleMarker(
+                [44.798, -68.819],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#090114ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_3e7d47fbffdf406bd215a0f081399410.bindTooltip(
+                `<div>
+                     <b>Bangor.Intl.AP, ME, USA</b><br>Mold-supportive days: <b>2.2%</b> of winter<br>Mean winter RH: 68.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2082cf4b14aa54d0c5fe404c4031cdd9 = L.circleMarker(
+                [46.871, -68.017],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_2082cf4b14aa54d0c5fe404c4031cdd9.bindTooltip(
+                `<div>
+                     <b>Caribou.Muni.AP, ME, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 71.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_069dc858e2cfe238357f47af2bd7422b = L.circleMarker(
+                [40.079, -75.013],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#130325ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_069dc858e2cfe238357f47af2bd7422b.bindTooltip(
+                `<div>
+                     <b>Philadelphia-Northeast.Philadelphia.AP, PA, USA</b><br>Mold-supportive days: <b>4.4%</b> of winter<br>Mean winter RH: 59.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_632ea9a5b2eddb90117d9cdff05a0abb = L.circleMarker(
+                [40.355, -79.922],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#130325ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_632ea9a5b2eddb90117d9cdff05a0abb.bindTooltip(
+                `<div>
+                     <b>Pittsburgh-Allegheny.County.AP, PA, USA</b><br>Mold-supportive days: <b>4.4%</b> of winter<br>Mean winter RH: 67.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c16dac122f015d9db2dda9cac3f4dbf = L.circleMarker(
+                [40.217, -76.85],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#270748ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_1c16dac122f015d9db2dda9cac3f4dbf.bindTooltip(
+                `<div>
+                     <b>Harrisburg-Capital.City.AP, PA, USA</b><br>Mold-supportive days: <b>8.9%</b> of winter<br>Mean winter RH: 61.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb5b4f42409dabb5794d39940171fe62 = L.circleMarker(
+                [40.683, -74.169],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#310958ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_eb5b4f42409dabb5794d39940171fe62.bindTooltip(
+                `<div>
+                     <b>Newark.Liberty.Intl.AP, NJ, USA</b><br>Mold-supportive days: <b>11.1%</b> of winter<br>Mean winter RH: 64.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac868b48fbca9111ce0eaac6a9e4d794 = L.circleMarker(
+                [39.35859, -74.41912],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7c1d6bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_ac868b48fbca9111ce0eaac6a9e4d794.bindTooltip(
+                `<div>
+                     <b>Atlantic.City.Boardwalk, NJ, USA</b><br>Mold-supportive days: <b>23.3%</b> of winter<br>Mean winter RH: 69.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b2ad545b8b88655fc01b218b18f0c857 = L.circleMarker(
+                [39.173, -76.684],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c0850ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_b2ad545b8b88655fc01b218b18f0c857.bindTooltip(
+                `<div>
+                     <b>Baltimore-Washington.Intl-Marshall.AP, MD, USA</b><br>Mold-supportive days: <b>10.0%</b> of winter<br>Mean winter RH: 66.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_334dde24445ac3d6ec0b6d6ae7daa490 = L.circleMarker(
+                [38.87351, -77.02113],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#310958ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_334dde24445ac3d6ec0b6d6ae7daa490.bindTooltip(
+                `<div>
+                     <b>Washington.Harbor, DC, USA</b><br>Mold-supportive days: <b>11.1%</b> of winter<br>Mean winter RH: 67.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cfb94f4d70050b0d6c90046e6d696322 = L.circleMarker(
+                [37.4, -77.517],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7c1d6bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_cfb94f4d70050b0d6c90046e6d696322.bindTooltip(
+                `<div>
+                     <b>Richmond-Chesterfield.County.AP, VA, USA</b><br>Mold-supportive days: <b>23.3%</b> of winter<br>Mean winter RH: 68.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3d9fe778a58f979eb7cccfadd5f957e = L.circleMarker(
+                [36.937, -76.289],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6f196aff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_b3d9fe778a58f979eb7cccfadd5f957e.bindTooltip(
+                `<div>
+                     <b>NAS.Norfolk-Chambers.Field, VA, USA</b><br>Mold-supportive days: <b>21.1%</b> of winter<br>Mean winter RH: 68.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e1f0837ff62aa5ef2f00b3236d219991 = L.circleMarker(
+                [37.317, -79.974],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d0537ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_e1f0837ff62aa5ef2f00b3236d219991.bindTooltip(
+                `<div>
+                     <b>Roanoke-Blacksburg.Rgnl.AP-Woodrum.Field, VA, USA</b><br>Mold-supportive days: <b>6.7%</b> of winter<br>Mean winter RH: 59.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9704a396a20c7c4deaf5d91b0b20769f = L.circleMarker(
+                [38.379, -81.59],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c0850ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9704a396a20c7c4deaf5d91b0b20769f.bindTooltip(
+                `<div>
+                     <b>Charleston-Yeager.AP, WV, USA</b><br>Mold-supportive days: <b>10.0%</b> of winter<br>Mean winter RH: 69.1%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a9006793882a1a530edd304e1fc3623 = L.circleMarker(
+                [38.041, -84.606],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c0850ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9a9006793882a1a530edd304e1fc3623.bindTooltip(
+                `<div>
+                     <b>Lexington-Blue.Grass.AP, KY, USA</b><br>Mold-supportive days: <b>10.0%</b> of winter<br>Mean winter RH: 67.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec3aba2a8c256c9f4a7d7fb6bec5f0ba = L.circleMarker(
+                [38.228, -85.664],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#130325ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_ec3aba2a8c256c9f4a7d7fb6bec5f0ba.bindTooltip(
+                `<div>
+                     <b>Louisville-Bowman.Rgnl.AP, KY, USA</b><br>Mold-supportive days: <b>4.4%</b> of winter<br>Mean winter RH: 66.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_952dcee88d7b68d720e62a08f1794d30 = L.circleMarker(
+                [36.182, -86.887],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6f196aff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_952dcee88d7b68d720e62a08f1794d30.bindTooltip(
+                `<div>
+                     <b>Nashville-Tune.AP, TN, USA</b><br>Mold-supportive days: <b>21.1%</b> of winter<br>Mean winter RH: 70.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2efe4148dc7410a8b05a742fd20a4a44 = L.circleMarker(
+                [35.818, -83.986],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#751b6cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_2efe4148dc7410a8b05a742fd20a4a44.bindTooltip(
+                `<div>
+                     <b>Knoxville-McGhee.Tyson.AP, TN, USA</b><br>Mold-supportive days: <b>22.2%</b> of winter<br>Mean winter RH: 66.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6acaf0dd897f9eedcb04d8d6083d236 = L.circleMarker(
+                [35.056, -89.987],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7c1d6bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_d6acaf0dd897f9eedcb04d8d6083d236.bindTooltip(
+                `<div>
+                     <b>Memphis.Intl.AP, TN, USA</b><br>Mold-supportive days: <b>23.3%</b> of winter<br>Mean winter RH: 67.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_969cdf2aad370888fd5feb752312d67a = L.circleMarker(
+                [35.432, -82.538],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#751b6cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_969cdf2aad370888fd5feb752312d67a.bindTooltip(
+                `<div>
+                     <b>Asheville.Rgnl.AP, NC, USA</b><br>Mold-supportive days: <b>22.2%</b> of winter<br>Mean winter RH: 66.1%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dae0da68a5a50e1040fc0f4a03c4069d = L.circleMarker(
+                [35.017, -80.621],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#751b6cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_dae0da68a5a50e1040fc0f4a03c4069d.bindTooltip(
+                `<div>
+                     <b>Charlotte-Monroe.Exec.AP, NC, USA</b><br>Mold-supportive days: <b>22.2%</b> of winter<br>Mean winter RH: 65.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c19f42a606fbee0fc74ddc9a7bbbb38c = L.circleMarker(
+                [35.892, -78.782],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4c1061ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_c19f42a606fbee0fc74ddc9a7bbbb38c.bindTooltip(
+                `<div>
+                     <b>Raleigh-Durham.Intl.AP, NC, USA</b><br>Mold-supportive days: <b>15.6%</b> of winter<br>Mean winter RH: 63.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d90e755ed3833589630002fcf55d82fe = L.circleMarker(
+                [34.268, -77.9],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ab305aff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_d90e755ed3833589630002fcf55d82fe.bindTooltip(
+                `<div>
+                     <b>Wilmington.Intl.AP, NC, USA</b><br>Mold-supportive days: <b>31.1%</b> of winter<br>Mean winter RH: 71.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7953c946365306e07ef7b242360a6322 = L.circleMarker(
+                [34.758, -82.376],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#902564ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_7953c946365306e07ef7b242360a6322.bindTooltip(
+                `<div>
+                     <b>Greenville-Donaldson.Center.AP, SC, USA</b><br>Mold-supportive days: <b>26.7%</b> of winter<br>Mean winter RH: 65.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e342498cfab6af6ac32d8da5c9e2d253 = L.circleMarker(
+                [33.971, -80.996],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5a1465ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_e342498cfab6af6ac32d8da5c9e2d253.bindTooltip(
+                `<div>
+                     <b>Columbia-Hamilton-Owens.AP, SC, USA</b><br>Mold-supportive days: <b>17.8%</b> of winter<br>Mean winter RH: 65.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f692242a7a97064ecbf2f7a22325133 = L.circleMarker(
+                [32.782, -79.925],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d6523aff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_7f692242a7a97064ecbf2f7a22325133.bindTooltip(
+                `<div>
+                     <b>Charleston, SC, USA</b><br>Mold-supportive days: <b>40.0%</b> of winter<br>Mean winter RH: 75.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b7a8512ddf601350c736fdba3cdab8e = L.circleMarker(
+                [33.779, -84.521],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6f196aff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_8b7a8512ddf601350c736fdba3cdab8e.bindTooltip(
+                `<div>
+                     <b>Atlanta-Fulton.County.AP-Brown.Field, GA, USA</b><br>Mold-supportive days: <b>21.1%</b> of winter<br>Mean winter RH: 66.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f54287fec198666d8a91e16691b7b30f = L.circleMarker(
+                [32.131, -81.202],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#972861ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_f54287fec198666d8a91e16691b7b30f.bindTooltip(
+                `<div>
+                     <b>Savannah-Hilton.Head.Intl.AP, GA, USA</b><br>Mold-supportive days: <b>27.8%</b> of winter<br>Mean winter RH: 71.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b23d71a13d0a0738cf21fe9ba20db3e = L.circleMarker(
+                [32.685, -83.653],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7c1d6bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_7b23d71a13d0a0738cf21fe9ba20db3e.bindTooltip(
+                `<div>
+                     <b>Macon-Middle.Georgia.Rgnl.AP, GA, USA</b><br>Mold-supportive days: <b>23.3%</b> of winter<br>Mean winter RH: 68.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fe7e6082fa651a6339febe88dbe58f0 = L.circleMarker(
+                [33.178, -86.782],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c84348ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_0fe7e6082fa651a6339febe88dbe58f0.bindTooltip(
+                `<div>
+                     <b>Birmingham-Shelby.County.AP, AL, USA</b><br>Mold-supportive days: <b>36.7%</b> of winter<br>Mean winter RH: 71.1%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a00023e2c8eb62d6a36321ba9aed42c = L.circleMarker(
+                [30.626, -88.068],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b83555ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_2a00023e2c8eb62d6a36321ba9aed42c.bindTooltip(
+                `<div>
+                     <b>Mobile-Brookley.Aeroplex, AL, USA</b><br>Mold-supportive days: <b>33.3%</b> of winter<br>Mean winter RH: 75.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_359b49076c946c4df4aca2502d6d5707 = L.circleMarker(
+                [32.383, -86.35],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#751b6cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_359b49076c946c4df4aca2502d6d5707.bindTooltip(
+                `<div>
+                     <b>Montgomery-Maxwell-Gunter.AFB, AL, USA</b><br>Mold-supportive days: <b>22.2%</b> of winter<br>Mean winter RH: 68.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d6c91f5ead8417ccd22f75e7234e2bd = L.circleMarker(
+                [32.321, -90.078],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c33e4dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_2d6c91f5ead8417ccd22f75e7234e2bd.bindTooltip(
+                `<div>
+                     <b>Jackson-Evers.Intl.AP, MS, USA</b><br>Mold-supportive days: <b>35.6%</b> of winter<br>Mean winter RH: 73.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a07291534907bb94c6eeb8064b9b253f = L.circleMarker(
+                [30.412, -89.081],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f17e25ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_a07291534907bb94c6eeb8064b9b253f.bindTooltip(
+                `<div>
+                     <b>Gulfport-Biloxi.Intl.AP, MS, USA</b><br>Mold-supportive days: <b>47.8%</b> of winter<br>Mean winter RH: 76.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82d9d9a4295b507c6c0154fec12cba35 = L.circleMarker(
+                [29.997, -90.278],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f07525ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_82d9d9a4295b507c6c0154fec12cba35.bindTooltip(
+                `<div>
+                     <b>New.Orleans-Armstrong.Intl.AP, LA, USA</b><br>Mold-supportive days: <b>46.7%</b> of winter<br>Mean winter RH: 76.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60facd2d1c73bb8c5f635c440ab32bb9 = L.circleMarker(
+                [30.53694, -91.14694],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d14d3fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_60facd2d1c73bb8c5f635c440ab32bb9.bindTooltip(
+                `<div>
+                     <b>Baton.Rouge.Metro.AP-Ryan.Field, LA, USA</b><br>Mold-supportive days: <b>38.9%</b> of winter<br>Mean winter RH: 73.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_583a0dbd760ad44a3607a7745181c478 = L.circleMarker(
+                [32.5, -93.667],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bd3952ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_583a0dbd760ad44a3607a7745181c478.bindTooltip(
+                `<div>
+                     <b>Shreveport-Bossier.City-Barksdale.AFB, LA, USA</b><br>Mold-supportive days: <b>34.4%</b> of winter<br>Mean winter RH: 73.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ea5d60036005023a23a521cb0132550 = L.circleMarker(
+                [34.727, -92.239],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#681769ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_5ea5d60036005023a23a521cb0132550.bindTooltip(
+                `<div>
+                     <b>Little.Rock-Clinton.Natl.AP-Adams.Field, AR, USA</b><br>Mold-supportive days: <b>20.0%</b> of winter<br>Mean winter RH: 69.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee1e3d7cfe18388deeae6f3f5dcf7682 = L.circleMarker(
+                [36.01, -94.169],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c0850ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_ee1e3d7cfe18388deeae6f3f5dcf7682.bindTooltip(
+                `<div>
+                     <b>Fayetteville.Exec.AP-Drake.Field, AR, USA</b><br>Mold-supportive days: <b>10.0%</b> of winter<br>Mean winter RH: 67.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0434f9da81836bb9b727c7f2a52e225f = L.circleMarker(
+                [36.039, -95.984],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_0434f9da81836bb9b727c7f2a52e225f.bindTooltip(
+                `<div>
+                     <b>Tulsa-Jones.AP, OK, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 62.1%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8aaf568bc5aff579bed831f714e4ef23 = L.circleMarker(
+                [35.48932, -97.81955],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#270748ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_8aaf568bc5aff579bed831f714e4ef23.bindTooltip(
+                `<div>
+                     <b>Oklahoma.City-Page.Muni.AP, OK, USA</b><br>Mold-supportive days: <b>8.9%</b> of winter<br>Mean winter RH: 69.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ecbac9c8dcbe0339e4af7f4080c7e55 = L.circleMarker(
+                [37.746, -97.221],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_1ecbac9c8dcbe0339e4af7f4080c7e55.bindTooltip(
+                `<div>
+                     <b>Wichita-Jabara.AP, KS, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 60.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b11b23468bac4847f5aa4d829d655c43 = L.circleMarker(
+                [39.07222, -95.63055],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#090114ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_b11b23468bac4847f5aa4d829d655c43.bindTooltip(
+                `<div>
+                     <b>Topeka-Billard.Muni.AP, KS, USA</b><br>Mold-supportive days: <b>2.2%</b> of winter<br>Mean winter RH: 66.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c72c1faf9836edd5da157e7490580070 = L.circleMarker(
+                [37.76139, -99.96861],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_c72c1faf9836edd5da157e7490580070.bindTooltip(
+                `<div>
+                     <b>Dodge.City.Rgnl.AP, KS, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 61.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35ca8a820237758ed560baa4106213f2 = L.circleMarker(
+                [41.31, -95.899],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_35ca8a820237758ed560baa4106213f2.bindTooltip(
+                `<div>
+                     <b>Omaha-Eppley.AF.Intl.AP, NE, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 69.1%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7008beae7a478f8019e877bd8b377b7 = L.circleMarker(
+                [40.848, -96.565],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_d7008beae7a478f8019e877bd8b377b7.bindTooltip(
+                `<div>
+                     <b>Lincoln-Lancaster.County, NE, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 71.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c14f21113db2cb10d94f5b76910338e = L.circleMarker(
+                [41.13277, -100.7],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9c14f21113db2cb10d94f5b76910338e.bindTooltip(
+                `<div>
+                     <b>North.Platte.Rgnl.AP-Bird.Field, NE, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 64.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a09f1f622be8f8e841042d3d9d2fb313 = L.circleMarker(
+                [41.534, -93.653],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_a09f1f622be8f8e841042d3d9d2fb313.bindTooltip(
+                `<div>
+                     <b>Des.Moines.Intl.AP, IA, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 72.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8e119b96c0eb74c3af3e0ed6d8f76c9 = L.circleMarker(
+                [41.883, -91.717],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_a8e119b96c0eb74c3af3e0ed6d8f76c9.bindTooltip(
+                `<div>
+                     <b>Cedar.Rapids-Eastern.Iowa.AP, IA, USA</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 80.1%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cedd0aa58adac3b799554f004e78cd81 = L.circleMarker(
+                [39.121, -94.597],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#130325ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_cedd0aa58adac3b799554f004e78cd81.bindTooltip(
+                `<div>
+                     <b>Kansas.City-Wheeler.Downtown.AP, MO, USA</b><br>Mold-supportive days: <b>4.4%</b> of winter<br>Mean winter RH: 65.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_004000495f50f0b7848471952fe6ce00 = L.circleMarker(
+                [38.753, -90.374],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#18042eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_004000495f50f0b7848471952fe6ce00.bindTooltip(
+                `<div>
+                     <b>St.Louis-Lambert.Intl.AP, MO, USA</b><br>Mold-supportive days: <b>5.6%</b> of winter<br>Mean winter RH: 64.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aaf3fca7f14115b07e571f67d4ea107a = L.circleMarker(
+                [37.23472, -93.40139],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#270748ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_aaf3fca7f14115b07e571f67d4ea107a.bindTooltip(
+                `<div>
+                     <b>Springfield-Branson.Natl.AP, MO, USA</b><br>Mold-supportive days: <b>8.9%</b> of winter<br>Mean winter RH: 64.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1489839826c1d6698345ef34680426cf = L.circleMarker(
+                [32.969, -96.836],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4c1061ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_1489839826c1d6698345ef34680426cf.bindTooltip(
+                `<div>
+                     <b>Dallas-Addison.AP, TX, USA</b><br>Mold-supportive days: <b>15.6%</b> of winter<br>Mean winter RH: 63.1%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8200acb3f34d8bc4b3d2ce6fae117942 = L.circleMarker(
+                [30.357, -95.414],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f17e25ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_8200acb3f34d8bc4b3d2ce6fae117942.bindTooltip(
+                `<div>
+                     <b>Conroe-North.Houston.Rgnl.AP, TX, USA</b><br>Mold-supportive days: <b>47.8%</b> of winter<br>Mean winter RH: 77.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e311f64d2cb438098e24f5c217e014a = L.circleMarker(
+                [30.183, -97.68],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9d2b5fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_3e311f64d2cb438098e24f5c217e014a.bindTooltip(
+                `<div>
+                     <b>Austin-Bergstrom.Intl.AP, TX, USA</b><br>Mold-supportive days: <b>28.9%</b> of winter<br>Mean winter RH: 67.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_140437ae2b523d39f0b8df6560cd7cc9 = L.circleMarker(
+                [29.383, -98.583],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#902564ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_140437ae2b523d39f0b8df6560cd7cc9.bindTooltip(
+                `<div>
+                     <b>San.Antonio-JB.San.Antonio-Kelly.Field.Annex, TX, USA</b><br>Mold-supportive days: <b>26.7%</b> of winter<br>Mean winter RH: 66.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b9beb54f0183206ce7f42de131e18d9 = L.circleMarker(
+                [27.58097, -97.21646],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f48f26ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_3b9beb54f0183206ce7f42de131e18d9.bindTooltip(
+                `<div>
+                     <b>Corpus.Christi-Malaquite.Beach, TX, USA</b><br>Mold-supportive days: <b>50.0%</b> of winter<br>Mean winter RH: 78.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6cae4e8446a3add93303f40960077abd = L.circleMarker(
+                [25.91667, -97.41917],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ee6c25ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_6cae4e8446a3add93303f40960077abd.bindTooltip(
+                `<div>
+                     <b>Brownsville-South.Padre.Island.Intl.AP, TX, USA</b><br>Mold-supportive days: <b>45.6%</b> of winter<br>Mean winter RH: 78.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6129640949ce937599ea55ace99f15d = L.circleMarker(
+                [49.1947, -123.1839],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdd042ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_d6129640949ce937599ea55ace99f15d.bindTooltip(
+                `<div>
+                     <b>Vancouver.Intl.AP, BC, CAN</b><br>Mold-supportive days: <b>58.9%</b> of winter<br>Mean winter RH: 85.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20fe071b87a5bb5b025e8d425a0fb908 = L.circleMarker(
+                [35.23306, -101.7092],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_20fe071b87a5bb5b025e8d425a0fb908.bindTooltip(
+                `<div>
+                     <b>Amarillo-Husband.Amarillo.Intl.AP, TX, USA</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 52.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_688826e64c728cbc7be0e8736f52c9a4 = L.circleMarker(
+                [32.036, -102.101],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#18042eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_688826e64c728cbc7be0e8736f52c9a4.bindTooltip(
+                `<div>
+                     <b>Midland.AF, TX, USA</b><br>Mold-supportive days: <b>5.6%</b> of winter<br>Mean winter RH: 51.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c95a91e78c83d795e8a469004e304ac = L.circleMarker(
+                [28.474, -82.454],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cd4844ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9c95a91e78c83d795e8a469004e304ac.bindTooltip(
+                `<div>
+                     <b>Brooksville-Tampa.Bay.Rgnl.AP, FL, USA</b><br>Mold-supportive days: <b>37.8%</b> of winter<br>Mean winter RH: 74.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1a8744108481bdf9fab6ba2a3aee18a = L.circleMarker(
+                [28.545, -81.333],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#611667ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_d1a8744108481bdf9fab6ba2a3aee18a.bindTooltip(
+                `<div>
+                     <b>Orlando.Exec.AP, FL, USA</b><br>Mold-supportive days: <b>18.9%</b> of winter<br>Mean winter RH: 71.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6baefe402c77cffdde9aba193e3f9985 = L.circleMarker(
+                [30.4, -81.417],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c33e4dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_6baefe402c77cffdde9aba193e3f9985.bindTooltip(
+                `<div>
+                     <b>Jacksonville-NS.Mayport, FL, USA</b><br>Mold-supportive days: <b>35.6%</b> of winter<br>Mean winter RH: 74.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cbd02af4173bab911873a7b4bc299d54 = L.circleMarker(
+                [30.44586, -84.30069],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b13358ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_cbd02af4173bab911873a7b4bc299d54.bindTooltip(
+                `<div>
+                     <b>Tallahassee.WSO, FL, USA</b><br>Mold-supportive days: <b>32.2%</b> of winter<br>Mean winter RH: 71.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34521dd3e4c60b454a12e25eaf50db95 = L.circleMarker(
+                [30.35, -87.317],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c33e4dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_34521dd3e4c60b454a12e25eaf50db95.bindTooltip(
+                `<div>
+                     <b>NAS.Pensacola-Sherman.Field, FL, USA</b><br>Mold-supportive days: <b>35.6%</b> of winter<br>Mean winter RH: 73.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f6f71221be943b1565cf72680e480a3 = L.circleMarker(
+                [25.907, -80.28],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5a1465ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_1f6f71221be943b1565cf72680e480a3.bindTooltip(
+                `<div>
+                     <b>Miami-Opa.Locka.Exec.AP, FL, USA</b><br>Mold-supportive days: <b>17.8%</b> of winter<br>Mean winter RH: 72.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a4a89a68aee21a9574930832522d1f4 = L.circleMarker(
+                [24.5558, -81.8078],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ea6528ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_5a4a89a68aee21a9574930832522d1f4.bindTooltip(
+                `<div>
+                     <b>Key.West.Harbor, FL, USA</b><br>Mold-supportive days: <b>44.4%</b> of winter<br>Mean winter RH: 77.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a6efcc0e4679b1e6f4fe63da318eeec = L.circleMarker(
+                [47.268, -122.576],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdfa98ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_7a6efcc0e4679b1e6f4fe63da318eeec.bindTooltip(
+                `<div>
+                     <b>Tacoma.Narrows.AP, WA, USA</b><br>Mold-supportive days: <b>66.7%</b> of winter<br>Mean winter RH: 85.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_344c1293da29c756dfd9fc56607fb540 = L.circleMarker(
+                [48.4133, -123.3247],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fcffa4ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_344c1293da29c756dfd9fc56607fb540.bindTooltip(
+                `<div>
+                     <b>Victoria-Gonzales.CS, BC, CAN</b><br>Mold-supportive days: <b>67.8%</b> of winter<br>Mean winter RH: 83.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2bacd18d375e1564fbea9c043bac9be5 = L.circleMarker(
+                [49.052, -123.87],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ea6528ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_2bacd18d375e1564fbea9c043bac9be5.bindTooltip(
+                `<div>
+                     <b>Nanaimo.AP, BC, CAN</b><br>Mold-supportive days: <b>44.4%</b> of winter<br>Mean winter RH: 85.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_16f81a6ea20107de04c164d021d0a42d = L.circleMarker(
+                [54.2861, -130.4447],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7c1d6bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_16f81a6ea20107de04c164d021d0a42d.bindTooltip(
+                `<div>
+                     <b>Prince.Rupert.AP-Digby.Island, BC, CAN</b><br>Mold-supportive days: <b>23.3%</b> of winter<br>Mean winter RH: 83.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c321436afedca94ef67eecef642a8f68 = L.circleMarker(
+                [50.6993, -120.4406],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_c321436afedca94ef67eecef642a8f68.bindTooltip(
+                `<div>
+                     <b>Kamloops.AP, BC, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 79.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a783cdf2324f996a001c00cd49ea2358 = L.circleMarker(
+                [53.889, -122.6719],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_a783cdf2324f996a001c00cd49ea2358.bindTooltip(
+                `<div>
+                     <b>Prince.George.Intl.AP, BC, CAN</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 82.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f71c617489cc2d16526b106c719d04d9 = L.circleMarker(
+                [51.0761, -114.2222],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_f71c617489cc2d16526b106c719d04d9.bindTooltip(
+                `<div>
+                     <b>Calgary-Canadian.Olympic.Park.Upper, AB, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 70.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a365fe59a59946be2f576602aa5119ed = L.circleMarker(
+                [53.5475, -114.1083],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_a365fe59a59946be2f576602aa5119ed.bindTooltip(
+                `<div>
+                     <b>Edmonton-Stony.Plain.AP.CS, AB, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 71.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f80ec270018b284d799a3dbbb59b2be3 = L.circleMarker(
+                [56.65, -111.2208],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_f80ec270018b284d799a3dbbb59b2be3.bindTooltip(
+                `<div>
+                     <b>Fort.McMurray.AP, AB, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 79.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f94f2ab5bd25c468e4b01def38f55f6 = L.circleMarker(
+                [49.626, -112.794],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_8f94f2ab5bd25c468e4b01def38f55f6.bindTooltip(
+                `<div>
+                     <b>Lethbridge.AP, AB, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 72.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31e98b6fcee3ec4dd6a32cca134f5c81 = L.circleMarker(
+                [52.1736, -106.7189],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_31e98b6fcee3ec4dd6a32cca134f5c81.bindTooltip(
+                `<div>
+                     <b>Saskatoon-Diefenbaker.Intl.AP, SK, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 78.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_14123987e6c20c3256d2adcb9e1cbb2a = L.circleMarker(
+                [50.4269, -104.6703],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_14123987e6c20c3256d2adcb9e1cbb2a.bindTooltip(
+                `<div>
+                     <b>Regina.Intl.AP, SK, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 77.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd933dace179ba7eaf27865bdaa764b2 = L.circleMarker(
+                [49.9158, -97.2493],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_dd933dace179ba7eaf27865bdaa764b2.bindTooltip(
+                `<div>
+                     <b>Winnipeg-Richardson.Intl.AP, MB, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 77.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9da0dc6a741b08d728ddf2981dfbb1c4 = L.circleMarker(
+                [58.74, -94.07],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9da0dc6a741b08d728ddf2981dfbb1c4.bindTooltip(
+                `<div>
+                     <b>Churchill.AP, MB, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 75.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac2c80c2c6a414a86da182d8252789d7 = L.circleMarker(
+                [48.3694, -89.3272],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_ac2c80c2c6a414a86da182d8252789d7.bindTooltip(
+                `<div>
+                     <b>Thunder.Bay.Intl.AP, ON, CAN</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 74.1%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d003c10de69012ea2252aec30c3968c = L.circleMarker(
+                [46.6237, -80.7939],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_9d003c10de69012ea2252aec30c3968c.bindTooltip(
+                `<div>
+                     <b>Sudbury.AP, ON, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 74.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_593502425334b3c7a1d6ef718c2a2d23 = L.circleMarker(
+                [43.866, -79.3681],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e021dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_593502425334b3c7a1d6ef718c2a2d23.bindTooltip(
+                `<div>
+                     <b>Toronto-Buttonville.Muni.AP, ON, CAN</b><br>Mold-supportive days: <b>3.3%</b> of winter<br>Mean winter RH: 73.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_afb68215beead2b320fc4848b4d2fdf1 = L.circleMarker(
+                [45.3171, -75.6739],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_afb68215beead2b320fc4848b4d2fdf1.bindTooltip(
+                `<div>
+                     <b>Ottawa-Macdonald-Cartier.Intl.AP, ON, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 74.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c8da132cb64325fd6ebd5f6251335457 = L.circleMarker(
+                [42.2788, -82.9494],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c0850ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_c8da132cb64325fd6ebd5f6251335457.bindTooltip(
+                `<div>
+                     <b>Windsor.Intl.AP, ON, CAN</b><br>Mold-supportive days: <b>10.0%</b> of winter<br>Mean winter RH: 74.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d451e48d5615fd4eff42511cc043efd = L.circleMarker(
+                [43.0269, -81.1486],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d0537ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_1d451e48d5615fd4eff42511cc043efd.bindTooltip(
+                `<div>
+                     <b>London.Intl.AP.CS, ON, CAN</b><br>Mold-supportive days: <b>6.7%</b> of winter<br>Mean winter RH: 77.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d741600ed011aa75d6887955846e9d63 = L.circleMarker(
+                [45.5152, -73.4167],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_d741600ed011aa75d6887955846e9d63.bindTooltip(
+                `<div>
+                     <b>Montreal-St.Hubert-Longueuil.AP, QC, CAN</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 72.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6fc7f54035e9eb7adf10503b385e7a5 = L.circleMarker(
+                [46.8369, -71.1972],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_f6fc7f54035e9eb7adf10503b385e7a5.bindTooltip(
+                `<div>
+                     <b>Quebec.City-Beauport, QC, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 74.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d645970067abc73f7fa25a58c6e86985 = L.circleMarker(
+                [45.4403, -71.6918],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#090114ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_d645970067abc73f7fa25a58c6e86985.bindTooltip(
+                `<div>
+                     <b>Sherbrooke.AP, QC, CAN</b><br>Mold-supportive days: <b>2.2%</b> of winter<br>Mean winter RH: 74.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a593031e12268e2127a77cbd9ccd096 = L.circleMarker(
+                [50.2181, -66.2414],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_2a593031e12268e2127a77cbd9ccd096.bindTooltip(
+                `<div>
+                     <b>Sept-Iles.AP, QC, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 71.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3392975464c99644b503943b0771cd3 = L.circleMarker(
+                [45.966, -66.651],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#090114ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_a3392975464c99644b503943b0771cd3.bindTooltip(
+                `<div>
+                     <b>Fredericton.Aquatic.Centre, NB, CAN</b><br>Mold-supportive days: <b>2.2%</b> of winter<br>Mean winter RH: 78.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f4efafb4fb57a7807bf9f4102817aab = L.circleMarker(
+                [45.3181, -65.8856],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#130325ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_1f4efafb4fb57a7807bf9f4102817aab.bindTooltip(
+                `<div>
+                     <b>Saint.John.AP, NB, CAN</b><br>Mold-supportive days: <b>4.4%</b> of winter<br>Mean winter RH: 75.1%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7511d5326e0b1bfe46ffa9b725f0a8c = L.circleMarker(
+                [44.88, -63.5],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#130325ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_f7511d5326e0b1bfe46ffa9b725f0a8c.bindTooltip(
+                `<div>
+                     <b>Halifax-Stanfield.Intl.AP, NS, CAN</b><br>Mold-supportive days: <b>4.4%</b> of winter<br>Mean winter RH: 81.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93fa8d589c43de959524efdd50b735be = L.circleMarker(
+                [46.163, -60.043],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#270748ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_93fa8d589c43de959524efdd50b735be.bindTooltip(
+                `<div>
+                     <b>Sydney-McCurdy.AP, NS, CAN</b><br>Mold-supportive days: <b>8.9%</b> of winter<br>Mean winter RH: 79.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5cf4937d8be48c33e100c8ccb777089 = L.circleMarker(
+                [46.2886, -63.1286],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#04000cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_e5cf4937d8be48c33e100c8ccb777089.bindTooltip(
+                `<div>
+                     <b>Charlottetown.AP, PE, CAN</b><br>Mold-supportive days: <b>1.1%</b> of winter<br>Mean winter RH: 79.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_305ef035c7a13c857337e39581d227ab = L.circleMarker(
+                [47.6222, -52.7428],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22063fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_305ef035c7a13c857337e39581d227ab.bindTooltip(
+                `<div>
+                     <b>St.Johns.Intl.AP, NL, CAN</b><br>Mold-supportive days: <b>7.8%</b> of winter<br>Mean winter RH: 81.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5b0c9aa9d8918e38d29e4dc3014f21e = L.circleMarker(
+                [53.3167, -60.4167],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_f5b0c9aa9d8918e38d29e4dc3014f21e.bindTooltip(
+                `<div>
+                     <b>Goose.Bay.AP-CFB.Goose.Bay, NL, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 64.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35262929873d1bce6739a099445e3faa = L.circleMarker(
+                [60.7095, -135.0689],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_35262929873d1bce6739a099445e3faa.bindTooltip(
+                `<div>
+                     <b>Whitehorse.Intl.AP, YT, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 78.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3918dd5431710a1b7c76aafedf24854 = L.circleMarker(
+                [62.4628, -114.4403],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_c3918dd5431710a1b7c76aafedf24854.bindTooltip(
+                `<div>
+                     <b>Yellowknife.AP, NT, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 74.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a86f6ab0f43e4f089c025b307851d284 = L.circleMarker(
+                [63.7478, -68.5444],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000004ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_a86f6ab0f43e4f089c025b307851d284.bindTooltip(
+                `<div>
+                     <b>Iqaluit.AP, NU, CAN</b><br>Mold-supportive days: <b>0.0%</b> of winter<br>Mean winter RH: 69.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1fb687af4704fbae4791fd1ac767397 = L.circleMarker(
+                [32.816, -117.139],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#370b5bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_c1fb687af4704fbae4791fd1ac767397.bindTooltip(
+                `<div>
+                     <b>San.Diego-Montgomery-Gibbs.Exec.AP, CA, USA</b><br>Mold-supportive days: <b>12.2%</b> of winter<br>Mean winter RH: 69.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a49360a063cd07faf25397c709809e7f = L.circleMarker(
+                [47.493, -122.214],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fcbc27ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+        
+    
+            circle_marker_a49360a063cd07faf25397c709809e7f.bindTooltip(
+                `<div>
+                     <b>Renton.Muni.AP, WA, USA</b><br>Mold-supportive days: <b>55.6%</b> of winter<br>Mean winter RH: 81.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+    var color_map_078a840b27c1dabaafb483880642743e = {};
+
+    
+    color_map_078a840b27c1dabaafb483880642743e.color = d3.scale.threshold()
+              .domain([0.0, 0.13587174348697395, 0.2717434869739479, 0.4076152304609218, 0.5434869739478958, 0.6793587174348698, 0.8152304609218436, 0.9511022044088175, 1.0869739478957916, 1.2228456913827654, 1.3587174348697395, 1.4945891783567133, 1.6304609218436872, 1.7663326653306612, 1.902204408817635, 2.038076152304609, 2.173947895791583, 2.309819639278557, 2.445691382765531, 2.581563126252505, 2.717434869739479, 2.8533066132264526, 2.9891783567134267, 3.1250501002004007, 3.2609218436873744, 3.396793587174349, 3.5326653306613225, 3.6685370741482966, 3.80440881763527, 3.9402805611222442, 4.076152304609218, 4.2120240480961915, 4.347895791583166, 4.4837675350701405, 4.619639278557114, 4.755511022044089, 4.891382765531062, 5.027254509018036, 5.16312625250501, 5.298997995991984, 5.434869739478958, 5.570741482965931, 5.706613226452905, 5.84248496993988, 5.978356713426853, 6.114228456913827, 6.2501002004008015, 6.385971943887776, 6.521843687374749, 6.657715430861723, 6.793587174348698, 6.929458917835671, 7.065330661322645, 7.201202404809618, 7.337074148296593, 7.472945891783567, 7.60881763527054, 7.744689378757515, 7.8805611222444885, 8.016432865731463, 8.152304609218437, 8.288176352705412, 8.424048096192383, 8.559919839679358, 8.695791583166333, 8.831663326653306, 8.967535070140281, 9.103406813627254, 9.239278557114227, 9.375150300601202, 9.511022044088177, 9.64689378757515, 9.782765531062124, 9.918637274549097, 10.054509018036072, 10.190380761523047, 10.32625250501002, 10.462124248496993, 10.597995991983968, 10.733867735470941, 10.869739478957916, 11.005611222444891, 11.141482965931862, 11.277354709418837, 11.41322645290581, 11.549098196392785, 11.68496993987976, 11.820841683366732, 11.956713426853707, 12.092585170340682, 12.228456913827655, 12.36432865731463, 12.500200400801603, 12.636072144288576, 12.771943887775551, 12.907815631262524, 13.043687374749497, 13.179559118236472, 13.315430861723446, 13.45130260521042, 13.587174348697395, 13.723046092184367, 13.858917835671342, 13.994789579158317, 14.13066132264529, 14.266533066132265, 14.402404809619236, 14.538276553106211, 14.674148296593186, 14.81002004008016, 14.945891783567134, 15.081763527054107, 15.21763527054108, 15.353507014028056, 15.48937875751503, 15.625250501002004, 15.761122244488977, 15.89699398797595, 16.032865731462927, 16.1687374749499, 16.304609218436873, 16.440480961923846, 16.576352705410823, 16.712224448897796, 16.848096192384766, 16.983967935871743, 17.119839679358716, 17.255711422845692, 17.391583166332666, 17.52745490981964, 17.663326653306612, 17.799198396793585, 17.935070140280562, 18.070941883767535, 18.20681362725451, 18.34268537074148, 18.478557114228455, 18.61442885771543, 18.750300601202404, 18.886172344689378, 19.022044088176354, 19.157915831663324, 19.2937875751503, 19.429659318637274, 19.565531062124247, 19.701402805611224, 19.837274549098193, 19.97314629258517, 20.109018036072143, 20.244889779559117, 20.380761523046093, 20.516633266533066, 20.65250501002004, 20.788376753507013, 20.924248496993986, 21.060120240480963, 21.195991983967936, 21.33186372745491, 21.467735470941882, 21.603607214428855, 21.739478957915832, 21.875350701402805, 22.011222444889782, 22.14709418837675, 22.282965931863725, 22.4188376753507, 22.554709418837675, 22.69058116232465, 22.82645290581162, 22.962324649298594, 23.09819639278557, 23.234068136272544, 23.36993987975952, 23.505811623246494, 23.641683366733464, 23.77755511022044, 23.913426853707413, 24.04929859719439, 24.185170340681363, 24.321042084168333, 24.45691382765531, 24.592785571142283, 24.72865731462926, 24.864529058116233, 25.000400801603206, 25.13627254509018, 25.272144288577152, 25.40801603206413, 25.543887775551102, 25.679759519038075, 25.81563126252505, 25.95150300601202, 26.087374749498995, 26.22324649298597, 26.359118236472945, 26.49498997995992, 26.63086172344689, 26.766733466933864, 26.90260521042084, 27.038476953907814, 27.17434869739479, 27.31022044088176, 27.446092184368734, 27.58196392785571, 27.717835671342684, 27.85370741482966, 27.989579158316634, 28.125450901803603, 28.26132264529058, 28.397194388777553, 28.53306613226453, 28.668937875751503, 28.804809619238473, 28.94068136272545, 29.076553106212423, 29.2124248496994, 29.348296593186372, 29.484168336673342, 29.62004008016032, 29.755911823647292, 29.89178356713427, 30.027655310621242, 30.163527054108215, 30.299398797595188, 30.43527054108216, 30.571142284569138, 30.70701402805611, 30.842885771543084, 30.97875751503006, 31.11462925851703, 31.250501002004007, 31.38637274549098, 31.522244488977954, 31.65811623246493, 31.7939879759519, 31.929859719438877, 32.065731462925854, 32.20160320641282, 32.3374749498998, 32.47334669338677, 32.609218436873746, 32.74509018036072, 32.88096192384769, 33.016833667334666, 33.152705410821646, 33.28857715430862, 33.42444889779559, 33.560320641282566, 33.69619238476953, 33.83206412825651, 33.967935871743485, 34.10380761523046, 34.23967935871743, 34.375551102204405, 34.511422845691385, 34.64729458917836, 34.78316633266533, 34.919038076152304, 35.05490981963928, 35.19078156312625, 35.326653306613224, 35.4625250501002, 35.59839679358717, 35.73426853707414, 35.870140280561124, 36.0060120240481, 36.14188376753507, 36.27775551102204, 36.41362725450902, 36.549498997996, 36.68537074148296, 36.821242484969936, 36.95711422845691, 37.09298597194388, 37.22885771543086, 37.364729458917836, 37.50060120240481, 37.63647294589178, 37.772344689378755, 37.908216432865736, 38.04408817635271, 38.179959919839675, 38.31583166332665, 38.45170340681362, 38.5875751503006, 38.723446893787575, 38.85931863727455, 38.99519038076152, 39.131062124248494, 39.266933867735474, 39.40280561122245, 39.53867735470942, 39.67454909819639, 39.81042084168336, 39.94629258517034, 40.08216432865731, 40.21803607214429, 40.35390781563126, 40.48977955911823, 40.62565130260521, 40.76152304609219, 40.89739478957916, 41.03326653306613, 41.1691382765531, 41.30501002004008, 41.44088176352705, 41.576753507014026, 41.712625250501, 41.84849699398797, 41.98436873747495, 42.120240480961925, 42.2561122244489, 42.39198396793587, 42.527855711422845, 42.66372745490982, 42.79959919839679, 42.935470941883764, 43.07134268537074, 43.20721442885771, 43.34308617234469, 43.478957915831664, 43.61482965931864, 43.75070140280561, 43.886573146292584, 44.022444889779564, 44.15831663326653, 44.2941883767535, 44.430060120240476, 44.56593186372745, 44.70180360721443, 44.8376753507014, 44.973547094188376, 45.10941883767535, 45.24529058116232, 45.3811623246493, 45.517034068136276, 45.65290581162324, 45.788777555110215, 45.92464929859719, 46.06052104208417, 46.19639278557114, 46.332264529058115, 46.46813627254509, 46.60400801603206, 46.73987975951904, 46.875751503006015, 47.01162324649299, 47.147494989979954, 47.28336673346693, 47.41923847695391, 47.55511022044088, 47.690981963927854, 47.82685370741483, 47.9627254509018, 48.09859719438878, 48.234468937875754, 48.37034068136273, 48.5062124248497, 48.642084168336666, 48.777955911823646, 48.91382765531062, 49.04969939879759, 49.185571142284566, 49.32144288577154, 49.45731462925852, 49.59318637274549, 49.729058116232466, 49.86492985971944, 50.00080160320641, 50.136673346693385, 50.27254509018036, 50.40841683366733, 50.544288577154305, 50.68016032064128, 50.81603206412826, 50.95190380761523, 51.087775551102204, 51.22364729458918, 51.35951903807615, 51.49539078156313, 51.6312625250501, 51.76713426853707, 51.90300601202404, 52.03887775551102, 52.17474949899799, 52.31062124248497, 52.44649298597194, 52.58236472945892, 52.71823647294589, 52.85410821643286, 52.98997995991984, 53.12585170340681, 53.26172344689378, 53.397595190380756, 53.53346693386773, 53.66933867735471, 53.80521042084168, 53.941082164328655, 54.07695390781563, 54.2128256513026, 54.34869739478958, 54.484569138276555, 54.62044088176352, 54.756312625250494, 54.89218436873747, 55.02805611222445, 55.16392785571142, 55.299799599198394, 55.43567134268537, 55.57154308617234, 55.70741482965932, 55.843286573146294, 55.97915831663327, 56.11503006012023, 56.250901803607206, 56.38677354709419, 56.52264529058116, 56.65851703406813, 56.794388777555106, 56.93026052104208, 57.06613226452906, 57.20200400801603, 57.337875751503006, 57.47374749498997, 57.609619238476945, 57.745490981963925, 57.8813627254509, 58.01723446893787, 58.153106212424845, 58.28897795591182, 58.4248496993988, 58.56072144288577, 58.696593186372745, 58.83246492985972, 58.968336673346684, 59.104208416833664, 59.24008016032064, 59.37595190380761, 59.511823647294584, 59.64769539078156, 59.78356713426854, 59.91943887775551, 60.055310621242484, 60.19118236472946, 60.32705410821643, 60.46292585170341, 60.598797595190376, 60.73466933867735, 60.87054108216432, 61.006412825651296, 61.142284569138276, 61.27815631262525, 61.41402805611222, 61.549899799599196, 61.68577154308617, 61.82164328657315, 61.95751503006012, 62.09338677354709, 62.22925851703406, 62.365130260521035, 62.501002004008015, 62.63687374749499, 62.77274549098196, 62.908617234468934, 63.04448897795591, 63.18036072144289, 63.31623246492986, 63.452104208416834, 63.5879759519038, 63.72384769539077, 63.859719438877754, 63.99559118236473, 64.13146292585171, 64.26733466933867, 64.40320641282564, 64.53907815631263, 64.6749498997996, 64.81082164328657, 64.94669338677355, 65.08256513026052, 65.21843687374749, 65.35430861723447, 65.49018036072144, 65.62605210420841, 65.76192384769539, 65.89779559118236, 66.03366733466933, 66.1695390781563, 66.30541082164329, 66.44128256513025, 66.57715430861724, 66.7130260521042, 66.84889779559118, 66.98476953907816, 67.12064128256513, 67.2565130260521, 67.39238476953906, 67.52825651302605, 67.66412825651302, 67.8])
+              .range(['#000004ff', '#000005ff', '#010006ff', '#010007ff', '#020008ff', '#030009ff', '#03000aff', '#04000bff', '#04000cff', '#05010dff', '#06010eff', '#06010fff', '#070110ff', '#070111ff', '#080112ff', '#090113ff', '#090114ff', '#0a0215ff', '#0a0216ff', '#0b0217ff', '#0c0218ff', '#0c0219ff', '#0d021aff', '#0d021bff', '#0e021cff', '#0f031dff', '#0f031fff', '#100320ff', '#100321ff', '#110322ff', '#120323ff', '#120324ff', '#130325ff', '#130326ff', '#140427ff', '#150428ff', '#150429ff', '#16042aff', '#16042bff', '#17042cff', '#18042dff', '#18042eff', '#19052fff', '#190530ff', '#1a0531ff', '#1b0532ff', '#1b0533ff', '#1c0534ff', '#1c0535ff', '#1d0536ff', '#1e0637ff', '#1e0638ff', '#1f0639ff', '#1f063bff', '#20063cff', '#21063dff', '#21063eff', '#22063fff', '#230740ff', '#230741ff', '#240742ff', '#240743ff', '#250744ff', '#260745ff', '#260746ff', '#270747ff', '#270748ff', '#280849ff', '#29084aff', '#29084bff', '#2a084cff', '#2a084dff', '#2b084eff', '#2c084fff', '#2c0850ff', '#2d0951ff', '#2d0952ff', '#2e0953ff', '#2f0954ff', '#2f0956ff', '#300957ff', '#300958ff', '#310959ff', '#320a5aff', '#320a5aff', '#330a5aff', '#340a5bff', '#350a5bff', '#360b5bff', '#370b5bff', '#370b5bff', '#380b5cff', '#390b5cff', '#3a0c5cff', '#3b0c5cff', '#3c0c5dff', '#3d0c5dff', '#3d0d5dff', '#3e0d5dff', '#3f0d5dff', '#400d5eff', '#410d5eff', '#420e5eff', '#420e5eff', '#430e5fff', '#440e5fff', '#450f5fff', '#460f5fff', '#470f60ff', '#480f60ff', '#480f60ff', '#491060ff', '#4a1060ff', '#4b1061ff', '#4c1061ff', '#4d1061ff', '#4d1161ff', '#4e1162ff', '#4f1162ff', '#501162ff', '#511262ff', '#521263ff', '#531263ff', '#531263ff', '#541263ff', '#551363ff', '#561364ff', '#571364ff', '#581364ff', '#581364ff', '#591465ff', '#5a1465ff', '#5b1465ff', '#5c1465ff', '#5d1566ff', '#5d1566ff', '#5e1566ff', '#5f1566ff', '#601566ff', '#611667ff', '#621667ff', '#631667ff', '#631667ff', '#641768ff', '#651768ff', '#661768ff', '#671768ff', '#681768ff', '#681869ff', '#691869ff', '#6a1869ff', '#6b1869ff', '#6c186aff', '#6d196aff', '#6e196aff', '#6e196aff', '#6f196bff', '#701a6bff', '#711a6bff', '#721a6bff', '#731a6bff', '#731a6cff', '#741b6cff', '#751b6cff', '#761b6cff', '#771b6dff', '#781c6dff', '#791c6dff', '#791c6cff', '#7a1c6cff', '#7b1d6cff', '#7c1d6cff', '#7d1d6bff', '#7d1e6bff', '#7e1e6bff', '#7f1e6aff', '#801f6aff', '#811f6aff', '#811f69ff', '#822069ff', '#832069ff', '#842069ff', '#852168ff', '#852168ff', '#862168ff', '#872267ff', '#882267ff', '#892267ff', '#892366ff', '#8a2366ff', '#8b2366ff', '#8c2465ff', '#8d2465ff', '#8e2465ff', '#8e2565ff', '#8f2564ff', '#902564ff', '#912664ff', '#922663ff', '#922663ff', '#932763ff', '#942762ff', '#952762ff', '#962862ff', '#962862ff', '#972861ff', '#982961ff', '#992961ff', '#9a2960ff', '#9a2a60ff', '#9b2a60ff', '#9c2a5fff', '#9d2a5fff', '#9e2b5fff', '#9f2b5fff', '#9f2b5eff', '#a02c5eff', '#a12c5eff', '#a22c5dff', '#a32d5dff', '#a32d5dff', '#a42d5cff', '#a52e5cff', '#a62e5cff', '#a72e5cff', '#a72f5bff', '#a82f5bff', '#a92f5bff', '#aa305aff', '#ab305aff', '#ab305aff', '#ac3159ff', '#ad3159ff', '#ae3159ff', '#af3259ff', '#b03258ff', '#b03258ff', '#b13358ff', '#b23357ff', '#b33357ff', '#b43457ff', '#b43456ff', '#b53456ff', '#b63556ff', '#b73555ff', '#b83555ff', '#b83655ff', '#b93655ff', '#ba3654ff', '#bb3754ff', '#bc3754ff', '#bc3853ff', '#bd3852ff', '#bd3952ff', '#be3951ff', '#bf3a51ff', '#bf3b50ff', '#c03b50ff', '#c03c4fff', '#c13c4eff', '#c23d4eff', '#c23e4dff', '#c33e4dff', '#c33f4cff', '#c43f4cff', '#c5404bff', '#c5414aff', '#c6414aff', '#c64249ff', '#c74249ff', '#c84348ff', '#c84448ff', '#c94447ff', '#c94546ff', '#ca4646ff', '#cb4645ff', '#cb4745ff', '#cc4744ff', '#cc4844ff', '#cd4943ff', '#ce4943ff', '#ce4a42ff', '#cf4a41ff', '#cf4b41ff', '#d04c40ff', '#d14c40ff', '#d14d3fff', '#d24d3fff', '#d24e3eff', '#d34f3dff', '#d44f3dff', '#d4503cff', '#d5503cff', '#d5513bff', '#d6523bff', '#d7523aff', '#d75339ff', '#d85339ff', '#d95438ff', '#d95538ff', '#da5537ff', '#da5637ff', '#db5636ff', '#dc5735ff', '#dc5835ff', '#dd5834ff', '#dd5934ff', '#de5933ff', '#df5a33ff', '#df5b32ff', '#e05b32ff', '#e05c31ff', '#e15c30ff', '#e25d30ff', '#e25e2fff', '#e35e2fff', '#e35f2eff', '#e45f2eff', '#e5602dff', '#e5612cff', '#e6612cff', '#e6622bff', '#e7622bff', '#e8632aff', '#e8642aff', '#e96429ff', '#e96528ff', '#ea6528ff', '#eb6627ff', '#eb6727ff', '#ec6726ff', '#ec6826ff', '#ed6925ff', '#ed6925ff', '#ee6a25ff', '#ee6b25ff', '#ee6d25ff', '#ee6e25ff', '#ee6f25ff', '#ef7025ff', '#ef7125ff', '#ef7225ff', '#ef7325ff', '#ef7425ff', '#f07525ff', '#f07625ff', '#f07725ff', '#f07825ff', '#f07a25ff', '#f17b25ff', '#f17c25ff', '#f17d25ff', '#f17e25ff', '#f17f25ff', '#f28025ff', '#f28125ff', '#f28225ff', '#f28326ff', '#f28426ff', '#f38626ff', '#f38726ff', '#f38826ff', '#f38926ff', '#f38a26ff', '#f38b26ff', '#f48c26ff', '#f48d26ff', '#f48e26ff', '#f48f26ff', '#f49026ff', '#f59126ff', '#f59326ff', '#f59426ff', '#f59526ff', '#f59626ff', '#f69726ff', '#f69826ff', '#f69926ff', '#f69a26ff', '#f69b26ff', '#f79c26ff', '#f79d26ff', '#f79f26ff', '#f7a026ff', '#f7a127ff', '#f8a227ff', '#f8a327ff', '#f8a427ff', '#f8a527ff', '#f8a627ff', '#f9a727ff', '#f9a827ff', '#f9a927ff', '#f9aa27ff', '#f9ac27ff', '#f9ad27ff', '#faae27ff', '#faaf27ff', '#fab027ff', '#fab127ff', '#fab227ff', '#fbb327ff', '#fbb427ff', '#fbb527ff', '#fbb627ff', '#fbb727ff', '#fcb927ff', '#fcba27ff', '#fcbb27ff', '#fcbc27ff', '#fcbd27ff', '#fdbe27ff', '#fdbf28ff', '#fdc028ff', '#fdc128ff', '#fdc228ff', '#fdc328ff', '#fdc429ff', '#fdc52bff', '#fdc62cff', '#fdc62eff', '#fdc72fff', '#fdc831ff', '#fdc832ff', '#fdc934ff', '#fdca35ff', '#fdcb37ff', '#fdcb38ff', '#fdcc3aff', '#fdcd3bff', '#fdce3dff', '#fdce3eff', '#fdcf40ff', '#fdd041ff', '#fdd043ff', '#fdd144ff', '#fdd246ff', '#fdd347ff', '#fdd349ff', '#fdd44aff', '#fdd54cff', '#fdd54dff', '#fdd64fff', '#fdd750ff', '#fdd852ff', '#fdd853ff', '#fdd955ff', '#fdda56ff', '#fddb58ff', '#fddb59ff', '#fddc5bff', '#fddd5cff', '#fddd5eff', '#fdde5fff', '#fddf61ff', '#fde062ff', '#fde064ff', '#fde165ff', '#fde267ff', '#fde368ff', '#fde36aff', '#fde46bff', '#fde56dff', '#fde56eff', '#fde670ff', '#fde771ff', '#fde873ff', '#fde874ff', '#fde976ff', '#fdea77ff', '#fdea79ff', '#fdeb7aff', '#fdec7cff', '#fded7dff', '#fded7fff', '#fdee80ff', '#fdef82ff', '#fdf083ff', '#fdf085ff', '#fdf186ff', '#fdf288ff', '#fdf289ff', '#fdf38bff', '#fdf48cff', '#fdf58eff', '#fdf58fff', '#fdf691ff', '#fdf792ff', '#fdf894ff', '#fdf895ff', '#fdf997ff', '#fdfa98ff', '#fdfa9aff', '#fdfb9bff', '#fdfc9dff', '#fdfd9eff', '#fdfda0ff', '#fdfea1ff', '#fdffa3ff', '#fcffa4ff']);
+    
+
+    color_map_078a840b27c1dabaafb483880642743e.x = d3.scale.linear()
+              .domain([0.0, 67.8])
+              .range([0, 450 - 50]);
+
+    color_map_078a840b27c1dabaafb483880642743e.legend = L.control({position: 'topright'});
+    color_map_078a840b27c1dabaafb483880642743e.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_078a840b27c1dabaafb483880642743e.legend.addTo(map_3aa7cc8f5a7f53037e27ad2b4b619e1f);
+
+    color_map_078a840b27c1dabaafb483880642743e.xAxis = d3.svg.axis()
+        .scale(color_map_078a840b27c1dabaafb483880642743e.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 11.299999999999999, 22.599999999999998, 33.9, 45.199999999999996, 56.5, 67.8]);
+
+    color_map_078a840b27c1dabaafb483880642743e.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_078a840b27c1dabaafb483880642743e.g = color_map_078a840b27c1dabaafb483880642743e.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_078a840b27c1dabaafb483880642743e.g.selectAll("rect")
+        .data(color_map_078a840b27c1dabaafb483880642743e.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_078a840b27c1dabaafb483880642743e.x(color_map_078a840b27c1dabaafb483880642743e.color.domain()[i - 1]) : color_map_078a840b27c1dabaafb483880642743e.x.range()[0],
+            x1: i < color_map_078a840b27c1dabaafb483880642743e.color.domain().length ? color_map_078a840b27c1dabaafb483880642743e.x(color_map_078a840b27c1dabaafb483880642743e.color.domain()[i]) : color_map_078a840b27c1dabaafb483880642743e.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_078a840b27c1dabaafb483880642743e.g.call(color_map_078a840b27c1dabaafb483880642743e.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("% of winter days at mold-supportive conditions (RH \u2265 80% AND temp \u2265 40\u00b0F)");
+</script>
+</html>
